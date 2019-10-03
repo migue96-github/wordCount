@@ -1,0 +1,11 @@
+<button><a href="{% url 'about' %}">About</a></button>
+<h1>Number of words: {{count}}</h1>
+<h1>Number of diferents words: {{ difwords }}</h1>
+<h1>Word -> Count</h1>
+{% for x, y in countByWords %}
+
+<label>
+    {{x}} -> {{y}}
+</label>
+<br/>
+{% endfor %}
